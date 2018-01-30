@@ -11,11 +11,8 @@ attr_accessor :id, :name, :type, :db
     Pokemon.new(id: poke_data[0], name: poke_data[1], type: poke_data[2], db: db)
   end
 
-  def initialize(pokemon)
-    @name = pokemon[:name]
-    @type = pokemon[:type]
-    @db = pokemon[:db]
-    @id = pokemon[:id]
-  end
+  def initialize(id:, name:, type:, db:, hp: nil)
+   @id, @name, @type, @hp, @db = id, name, type, hp, db
+ end
 
 end
