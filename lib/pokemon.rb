@@ -13,7 +13,7 @@ attr_accessor :id, :name, :type, :db
   end
 
   def self.find(id, db)
-    db.execute("SELECT name, type, id FROM pokemon WHERE id = (?)", id)
+    db.prepare("SELECT name, type, id FROM pokemon WHERE id = (?)", id)
   end
 
 end
