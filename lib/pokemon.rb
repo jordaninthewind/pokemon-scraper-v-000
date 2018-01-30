@@ -3,9 +3,9 @@ attr_accessor :id, :name, :type, :db
 
   def initialize(pokemon)
     @name = :name
-    @type = pokemon[:type]
-    @db = pokemon[:db]
-    @id = pokemon[:id]
+    @type = :type
+    @db = :db
+    @id = :id
   end
 
   def self.save(name, type, db)
