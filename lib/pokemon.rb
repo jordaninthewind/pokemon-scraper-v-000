@@ -12,7 +12,11 @@ attr_accessor :id, :name, :type, :db, :hpow
   end
 
   def initialize(id:, name:, type:, db:, hpow: nil)
-   @id, @name, @type, @hp, @db = id, name, type, hpow, db
+   @id = id
+   @name = name
+   @type = type
+   @db = db
+   @hpow = hpow
  end
 
 end
